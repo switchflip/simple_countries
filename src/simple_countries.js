@@ -6,9 +6,9 @@ window.simpleCountries = new function()
   this.all = function()
   {
     if(_countries.length > 0) return _countries;
-    for (countryData in _data)
+    for (i in _data)
     {
-      _countries[countryData[1]] = countryData[0];
+      _countries[_data[i][1]] = _data[i][0];
     }
     return _countries;
   };
@@ -19,9 +19,9 @@ window.simpleCountries = new function()
   {
     var states = [];
     var country = undefined;
-    for (countryData in _data)
+    for (i in _data)
     {
-      if(countryData[1] == countryCode) return countryData[2].split("|");
+      if(_data[i][1] == countryCode) return _data[i][2].split("|");
     }
     throw "Bad country code " + countryCode;
   };
