@@ -1,0 +1,17 @@
+{
+  "name": "simple-countries",
+  "version": "0.0.1",
+  "authors": [
+    "Thomas Berry <thom.berry@gmail.com>"
+  ],
+  "description": "returns a list of states related to countries",
+  "main": "simple_countries.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
